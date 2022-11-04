@@ -20,6 +20,6 @@ Take results with caution, we only used 1 training sample and tested with that s
 
 ## Other Tests
 
-We also ran it against images with out train ground truth
+We also ran it against images without ground truths
 
 ![](data/other_tests.png)
