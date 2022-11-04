@@ -10,7 +10,7 @@ from retinal_segmenter import RetinalSegmenter
 if __name__ == '__main__':
 
     output_folder = Path(sys.argv[-1] if len(sys.argv) > 1 else "preds")
-    output_folder.mkdir(parents=True)
+    output_folder.mkdir(parents=True, exist_ok=True)
 
     print(f"Prediction Outputs at {output_folder}/ directory")
 
