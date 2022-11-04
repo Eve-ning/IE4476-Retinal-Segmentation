@@ -2,6 +2,15 @@
 
 This project is part of IE4476 Image Processing, a course offered by NTU
 
+## Running it
+
+You need to create a Python 3.8 environment, then:
+
+```
+pip install -r requirements.txt
+python main.py
+```
+
 ## Summary
 
 We analyzed and fine-tuned a single train image to segment a vessel boolean image.
