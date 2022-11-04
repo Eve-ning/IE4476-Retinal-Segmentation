@@ -11,6 +11,24 @@ pip install -r requirements.txt
 python main.py
 ```
 
+### Expected Output
+
+The predictions will be output into the `data/` folder.
+
+You'll expect these output from running it:
+```
+Evaluating Train Accuracy of Training Sample ...
+======== Statistics ========
+F1 Score: 80.06%
+Sensitivity/Recall: 78.75%
+Accuracy: 95.30%
+============================
+Saving Prediction of Training Sample in data/y_pred_train.gif ...
+Saving Prediction of Testing Sample in data/y_pred_test.gif ...
+Predicting other test samples as a collage
+Saving Prediction of Other Test Samples in data/other_tests.png ...
+```
+
 ## Summary
 
 We analyzed and fine-tuned a single train image to segment a vessel boolean image.
