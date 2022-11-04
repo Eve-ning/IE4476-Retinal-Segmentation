@@ -1,16 +1,22 @@
-import matplotlib
+import sys
+from pathlib import Path
+
+import matplotlib.pyplot as plt
 from sklearn.metrics import recall_score, accuracy_score
 
 from image_io import load_images, save_images, load_other_tests
 from retinal_segmenter import RetinalSegmenter
 
-import matplotlib.pyplot as plt
-
 if __name__ == '__main__':
 
-    TRAIN_PREDICT_PATH = 'data/y_pred_train.gif'
-    TEST_PREDICT_PATH = 'data/y_pred_test.gif'
-    OTHER_TEST_PREDICT_PATH = 'data/other_tests.png'
+    output_folder = Path(sys.argv[-1] if len(sys.argv) > 1 else "preds")
+    output_folder.mkdir(parents=True)
+
+    print(f"Prediction Outputs at {output_folder}/ directory")
+
+    TRAIN_PREDICT_PATH = f'{output_folder}/y_pred_train.gif'
+    TEST_PREDICT_PATH = f'{output_folder}/y_pred_test.gif'
+    OTHER_TEST_PREDICT_PATH = f'{output_folder}/other_tests.png'
 
     x_train, y_train, x_test = load_images()
     seg = RetinalSegmenter()
@@ -45,4 +51,4 @@ if __name__ == '__main__':
 
     print(f"Saving Prediction of Other Test Samples in {OTHER_TEST_PREDICT_PATH} ...")
     fig.tight_layout()
-    fig.savefig("data/other_tests.png")
+    fig.savefig(OTHER_TEST_PREDICT_PATH)

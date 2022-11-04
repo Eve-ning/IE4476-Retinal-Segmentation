@@ -31,4 +31,8 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run Main
       run: |
-        python main.py
+        python main.py preds_gh
+    - name: Commit Created Files
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Add Predictions
