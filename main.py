@@ -4,7 +4,6 @@ from sklearn.metrics import recall_score, accuracy_score
 from image_io import load_images, save_images, load_other_tests
 from retinal_segmenter import RetinalSegmenter
 
-matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
