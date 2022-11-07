@@ -22,10 +22,14 @@ Take results with caution, we only used 1 training sample and tested with that s
 
 You need to create a Python 3.8 environment, then:
 
-```
-pip install -r requirements.txt
+```shell
+python -m pip install -r requirements.txt
 python main.py preds
 ```
+
+Remember to delete the environment when you're done!
+
+> If you're having trouble running this, you can observe the expected output in `preds_gh/`, described below.
 
 ### Expected Output
 
