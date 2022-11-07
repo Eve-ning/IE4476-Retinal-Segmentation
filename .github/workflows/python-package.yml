@@ -3,11 +3,7 @@
 
 name: Prediction Pipeline
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+on: [push, pull_request, pull_request_target]
 
 jobs:
   build:
