@@ -1,3 +1,4 @@
+[![Prediction Pipeline](https://github.com/Eve-ning/IE4476-Retinal-Segmentation/actions/workflows/python-package.yml/badge.svg)](https://github.com/Eve-ning/IE4476-Retinal-Segmentation/actions/workflows/python-package.yml)
 # Retinal Segmentation
 
 This project is part of IE4476 Image Processing, a course offered by NTU
