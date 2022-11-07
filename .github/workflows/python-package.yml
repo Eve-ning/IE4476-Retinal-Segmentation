@@ -3,11 +3,7 @@
 
 name: Prediction Pipeline
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+on: [pull_request]
 
 jobs:
   build:
@@ -35,5 +31,5 @@ jobs:
     - name: Commit Created Files
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        file_pattern: '*.tiff *.png'
+        file_pattern: '*.tiff *.gif *.png'
         commit_message: Add Predictions

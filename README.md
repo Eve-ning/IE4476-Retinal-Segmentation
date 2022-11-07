@@ -7,9 +7,9 @@ This project is part of IE4476 Image Processing, a course offered by NTU
 
 We analyzed and fine-tuned a single train image to segment a vessel boolean image.
 
-| Train Image Input      | Train Image Expected Output | Train Image Actual Output       |
-| ---------------------- | --------------------------- |---------------------------------|
-| ![](data/x_train.gif)  | ![](data/y_train.gif)       | ![](preds_gh/y_pred_train.tiff) |
+| Train Image Input      | Train Image Expected Output | Train Image Actual Output      |
+| ---------------------- | --------------------------- |--------------------------------|
+| ![](data/x_train.gif)  | ![](data/y_train.gif)       | ![](preds_gh/y_pred_train.gif) |
 
 ### Results
 
