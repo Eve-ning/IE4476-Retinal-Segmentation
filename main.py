@@ -14,8 +14,8 @@ if __name__ == '__main__':
 
     print(f"Prediction Outputs at {output_folder}/ directory")
 
-    TRAIN_PREDICT_PATH = f'{output_folder}/y_pred_train.gif'
-    TEST_PREDICT_PATH = f'{output_folder}/y_pred_test.gif'
+    TRAIN_PREDICT_PATH = f'{output_folder}/y_pred_train.tiff'
+    TEST_PREDICT_PATH = f'{output_folder}/y_pred_test.tiff'
     OTHER_TEST_PREDICT_PATH = f'{output_folder}/other_tests.png'
 
     x_train, y_train, x_test = load_images()
