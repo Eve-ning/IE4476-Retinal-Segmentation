@@ -22,6 +22,7 @@ if __name__ == '__main__':
     x_train, y_train, x_test = load_images()
     seg = RetinalSegmenter()
     y_pred_train = seg.predict(x_train)
+    y_pred_test = seg.predict(x_test)
 
     train_score = seg.score(y_pred_train, y_train)
 
@@ -39,9 +40,9 @@ if __name__ == '__main__':
     print(f"Saving Prediction of Testing Sample in {TEST_PREDICT_PATH} ...")
 
     save_images({
-        TRAIN_PREDICT_PATH: seg.predict(x_test),
-        TRAIN_PREDICT_PATH_GIF: seg.predict(x_test),
-        TEST_PREDICT_PATH: y_pred_train
+        TRAIN_PREDICT_PATH: y_pred_train,
+        TRAIN_PREDICT_PATH_GIF: y_pred_train,
+        TEST_PREDICT_PATH: y_pred_test
     })
 
     print("Predicting other test samples as a collage")
