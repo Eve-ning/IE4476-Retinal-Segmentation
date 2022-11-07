@@ -15,6 +15,7 @@ if __name__ == '__main__':
     print(f"Prediction Outputs at {output_folder}/ directory")
 
     TRAIN_PREDICT_PATH = f'{output_folder}/y_pred_train.tiff'
+    TRAIN_PREDICT_PATH_GIF = f'{output_folder}/y_pred_train.gif'  # For GitHub Markdown display
     TEST_PREDICT_PATH = f'{output_folder}/y_pred_test.tiff'
     OTHER_TEST_PREDICT_PATH = f'{output_folder}/other_tests.png'
 
@@ -37,8 +38,11 @@ if __name__ == '__main__':
     print(f"Saving Prediction of Training Sample in {TRAIN_PREDICT_PATH} ...")
     print(f"Saving Prediction of Testing Sample in {TEST_PREDICT_PATH} ...")
 
-    save_images({TRAIN_PREDICT_PATH: seg.predict(x_test),
-                 TEST_PREDICT_PATH: y_pred_train})
+    save_images({
+        TRAIN_PREDICT_PATH: seg.predict(x_test),
+        TRAIN_PREDICT_PATH_GIF: seg.predict(x_test),
+        TEST_PREDICT_PATH: y_pred_train
+    })
 
     print("Predicting other test samples as a collage")
     # Here, we create a collage of the other tests and their results
