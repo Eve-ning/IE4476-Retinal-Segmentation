@@ -17,7 +17,7 @@ Take results with caution, we only used 1 training sample and tested with that s
 
 | F1 Score | Accuracy | Sensitivity (Recall) |
 |----------|----------|----------------------|
-| 80.06%   | 78.75%   | 95.30%               |
+| 80.06%   | 95.30%   | 78.75%               |
 
 ## Running it
 
